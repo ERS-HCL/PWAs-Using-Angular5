@@ -1,0 +1,38 @@
+<div *ngIf="loader" id="loading"></div>
+
+<div class="searchWrapper" *ngIf="errormsg !== null">
+    <mat-card class="example-card">
+        <strong>{{errormsg}}</strong>
+    </mat-card>
+</div>
+
+<div class="header large border first lazyloaded" *ngIf="data">
+    <div class="custom_bg">
+        <div class="single_column">
+            <section class="images inner">
+                <div class="poster">
+                    <div class="image_content">
+                        <img class="poster" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2{{data.poster_path}}" alt="{{ data.original_title }}">
+                    </div>
+                    <div style='clear:both'></div>
+                </div>
+                <div class="header_poster_wrapper">
+                    <div class="title" dir="auto">
+                        <span class="mrBtm15 blockCnt"><a href="#"><h2 class="14 movieTitle whiteColor">{{ data.original_title }}</h2></a> <span class="release_date whiteColor">({{ data.release_date | date:'MMM d, y' }})</span></span>
+                    </div>
+                    <div class="header_info">
+                        <h3 dir="auto" class="whiteColor basicText mrNone">Overview</h3>
+                        <div class="overview" dir="auto">
+                            <p class="whiteColor basicText mrNone">{{ data.overview }}</p>
+                        </div>
+                        <div class="btclass">
+                            <button mat-raised-button color="primary" (click)="openDialog()">Play Trailer</button>
+                        </div>
+                    </div>
+                </div>
+                <div style='clear:both'></div>
+            </section>
+            <div style='clear:both'></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,285 @@
+
+.example-header-image {
+  background-image: url('https://cdn.iconscout.com/public/images/icon/free/png-512/itunes-logo-35942cc521d70efa-512x512.png');
+  background-size: cover;
+}
+.button-row{
+    display: inline;
+}
+
+.searchbox{
+    margin-top: 5px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    background: transparent;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Repeat Element*/
+div.results.flex.results{
+    justify-content:flex-start
+}
+
+div.results.flex.results div.item:nth-child(-n+4),div.results.flex.results_backdrop_card div.item:nth-child(-n+2),div.results.flex.results_poster_card div.item:nth-child(-n+2){
+    margin-top:16px
+}
+div.results.flex.results_backdrop_card div.item:nth-child(n+3),div.results.flex.results_poster_card div.item:nth-child(n+3){
+    margin-top:30px
+}
+div.item.poster.card{
+    display:flex;
+    align-items:center
+}
+div.item p{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding:0;
+    width:100%;
+    line-height:1.2em;
+    margin:0
+}
+div.item p:last-of-type{
+    margin-bottom:0
+}
+
+div.item.poster.card div.image_content{
+    width:185px
+}
+div.item.poster div.image_content img{
+    width:185px;
+    height:278px
+}
+div.item.backdrop div.image_content img{
+    position:relative;
+    top:0;
+    left:-25px;
+    width:500px;
+    height:278px
+}
+div.item.mini.backdrop div.image_content img{
+    top:0;
+    left:0;
+    width:250px;
+    height:141px;
+    border-radius:4px
+}
+div.item.backdrop.card.backdrop div.image_content img{
+    left:-10px
+}
+div.image_content a{
+    width:100%;
+    height:100%;
+    display:block;
+    line-height:0
+}
+div.image_content a:hover div.meta{
+    visibility:visible
+}
+div.image_content a div.meta{
+    visibility:hidden;
+    background-color:rgba(255,255,255,0.9);
+    position:relative;
+    top:-40px;
+    left:0;
+    height:40px;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+    padding-left:10px;
+    padding-right:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+div.item.backdrop.card span.release_date span.glyphicons{
+    top:0;
+    padding-right:0;
+    padding-left:4px
+}
+div.item.card span.release_date,div.item.card span.release_date span.glyphicons,div.card span.genres,div.item.mini span.genres{
+    color:#666
+}
+div.item.card span.genres{
+    padding-left:1px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-style:italic
+}
+div.item.mini span.genres{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis
+}
+div.item.poster.card div.info{
+    width:100%;
+    height:278px;
+    position:relative;
+    box-sizing:border-box;
+    padding:10px 0 16px 16px;
+    overflow:hidden
+}
+div.item.card p.overview {
+    word-wrap:break-word;
+    white-space:normal;
+    color:#4d4d4d;
+    font-size:0.9em;
+    line-height:1.2em;
+    margin-top:30px
+}
+div.item.card p.view_more{
+    border-top:1px solid #e3e3e3;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding:16px
+}
+div.item.card p.view_more a{
+    font-size:0.9em;
+    font-weight:400
+}
+div.item p.meta{
+    padding-top:0;
+    font-size:0.9em
+}
+div.item p.flex+p.meta{
+    margin-top:4px
+}
+div.item p a,div.item a{
+    color:#000;
+    font-weight:400
+}
+div.item p a.title{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:inline-block;
+    padding-right:20px;
+    font-weight:600;
+    font-size:1.1em
+}
+div.item p a{
+    font-size:1em
+}
+div.item p a:hover,div.item a:hover{
+    text-decoration:none
+}
+div.item.poster{
+    width:185px
+}
+div.item.backdrop{
+    width:445px
+}
+div.item.mini.backdrop{
+    width:250px;
+    margin:0 15px 0 0
+}
+div.item.mini.backdrop:last-child{
+    margin-right:0
+}
+div.item.card{
+    width:483px;
+    background-color:#fff;
+    box-sizing:border-box
+}
+div.item.backdrop.card2 div.content,div.item.poster div.content{
+    padding:6px 4px
+}
+div.item.card div.wrapper{
+    display:flex
+}
+div.item.card div.wrapper a{
+    width:100%;
+    display:block;
+    font-weight:600;
+    font-size:1.1em;
+    line-height:1.1em;
+    text-decoration: none;
+}
+div.item.card div.wrapper span{
+    color:rgba(0,0,0,0.6);
+    line-height:1em
+}
+div.item.card div.wrapper div.flex{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center
+}
+div.item.backdrop div.content{
+    padding:6px 10px
+}
+div.item.backdrop div.content p{
+    margin-bottom:0
+}
+div.image_content{
+    overflow:hidden
+}
+div.item.mini.backdrop div.image_content{
+    width:250px;
+    height:141px
+}
+div.item.poster div.image_content,div.item.backdrop div.image_content{
+    height:278px;
+    line-height:0
+}
+div.item.card:nth-child(even){
+    margin-left:0
+}
+div.item.card{
+    width:740px;
+    display:flex;
+    align-items:center;
+    border:1px solid #e3e3e3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+div.contentBoxWrapper {
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contentBox{
+    width: 19%;
+    margin: 10px;
+}
+.hgt50 {
+    height: 50px;
+    overflow: hidden;
+}
+.ratings{
+    width: 42px;
+    height: 42px;
+    background: #ececec;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 1px #ccc;
+}
+.justifyCnt {
+        justify-content: space-between;
+}
+.searchWrapper {
+    width: 98%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 720px) {
+    .contentBox{
+        width: 100%;
+        margin: 10px;
+    }
+}
